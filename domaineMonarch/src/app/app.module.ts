@@ -12,6 +12,22 @@ import { ListPhotoComponent } from './photo/list-photo/list-photo.component';
 import { PhotoViewComponent } from './photo/photo-view/photo-view.component';
 import { PhotoSingleComponent } from './photo/photo-single/photo-single.component';
 import { AddphotoFormComponent } from './photo/addphoto-form/addphoto-form.component';
+import {AuthService}from './services/auth.service';
+import {AuthGuardService}from './services/auth-guard.service';
+import {PhotosService}from './services/photos.service';
+import{Routes, RouterModule} from '@angular/router';
+import{FormsModule} from '@angular/forms';
+
+
+const appRoutes: Routes = [
+  { path: 'auth/signup', component: SignUpComponent },
+  { path: 'auth/signin', component: SignInComponent },
+  { path: 'photos', component: ListPhotoComponent },
+  { path: 'photo/new', component: AddphotoFormComponent },
+  { path: 'photo/view/:id', component: PhotoSingleComponent },
+  { path: '', component: WelcomeComponent }
+
+];
 
 @NgModule({
   declarations: [
@@ -28,9 +44,11 @@ import { AddphotoFormComponent } from './photo/addphoto-form/addphoto-form.compo
     AddphotoFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthService,AuthGuardService,PhotosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
