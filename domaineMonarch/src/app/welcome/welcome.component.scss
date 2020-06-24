@@ -1,0 +1,97 @@
+.titleMajor{
+	color: #212931;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+
+.elementSommaire {
+	 
+    border-bottom: 0;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+
+.posts:before {
+	border-top-color:  #eeeeee;
+	content: '';
+	width: calc(50% - 6rem);
+    border-top: solid 2px;
+}			
+
+.posts{
+			text-align: center;
+			padding: 6rem 8rem 6rem 8rem ;
+}
+
+ .major  h1, .titleMajor {
+				font-size: 4rem;
+				line-height: 1.1;
+				margin: 0 0 2rem 0;
+				word-break: break-word;
+}
+
+
+.posts .presentationImage a img{
+			width:40%;
+			height:40%;
+}
+
+@media screen and (max-width: 1280px) {
+
+				.posts {
+					padding: 6rem 4rem 4rem 4rem ;
+				}
+
+			}
+
+@media screen and (max-width: 736px) {
+
+				.posts {
+					padding: 4rem 2rem 2rem 2rem ;
+				}
+
+
+				.posts header.major  h1, .posts header.major h2 {
+					font-size: 2.5rem;
+					line-height: 1.2;
+					margin: 0 0 1.5rem 0;
+				}
+
+			}
+
+.listesommaire
+{
+	color: #212931;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	list-style: none;
+	margin: 4rem 0 2rem 0;
+}
+
+.listesommaire li a:hover {
+	color: #ffffff;
+	box-shadow: inset 0 0 0 2px #212931;
+	background-color: #212931
+
+}
+
+header.major {
+	margin: 0 0 4rem 0;
+	text-align: center;
+}
+
+header.major p {
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+	margin :0 0 2rem 0;
+}

@@ -1,0 +1,47 @@
+.icons li {
+	display: inline-block;
+	padding: 0 0.5rem 0 0;
+	vertical-align: middle;
+}
+
+.container
+{
+	-moz-transition: opacity 0.5s ease;
+		-webkit-transition: opacity 0.5s ease;
+		-ms-transition: opacity 0.5s ease;
+		transition: opacity 0.5s ease;
+	overflow: hidden;
+    min-width: 330px;
+    min-height: 750px;
+    display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/*Main */
+#main {
+
+	background-color: #ffffff;
+	margin: 0 auto;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+
+}
+
+
+
+header.major {
+	margin: 0 0 4rem 0;
+	text-align: center;
+}
+
+header.major p {
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+	margin :0 0 2rem 0;
+}

@@ -29,8 +29,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/css/homeLemurien.scss",
-              "src/assets/css/fontawesome-all.min.css"
+              "src/assets/css/fontawesome-all.min.css",
+              "src/assets/css/generic.css"
+
             ],
             "scripts": []
           },

@@ -1,0 +1,223 @@
+/*header*/
+
+
+
+#intro {
+	color: #ffffff;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+		-moz-justify-content: -moz-flex-end;
+		-webkit-justify-content: -webkit-flex-end;
+		-ms-justify-content: -ms-flex-end;
+		justify-content: flex-end;
+		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		transition: opacity 1s ease, transform 1s ease;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		height: 40rem;
+		padding: 8rem 4rem 6rem 4rem;
+
+
+}
+
+#intro .bienvenue {
+	font-size: 4rem;
+    line-height: 1;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+#intro .presentation {
+	font-size: 1.25rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+#intro .presentationImage
+{
+	text-align: center;
+}
+
+#intro .presentationImage .moi
+{
+	width: 40%;
+	height:100%;
+}
+
+
+@media screen and (max-width: 980px) {
+
+			#intro {
+				padding: 4rem 4rem 2rem 4rem ;
+				min-height: 90vh;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#intro {
+				padding: 3rem 2rem 1rem 2rem ;
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 3.25rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+		}
+
+/*Nav*/
+
+#navHomePage {
+		color: #ffffff;
+		background: rgba(255, 255, 255, 0.175);
+		height: 4rem;
+		line-height: 4rem;
+		margin: -4rem auto 0 auto;
+		overflow: hidden;
+		width: calc(100% - 4rem);
+		max-width: 72rem;
+		display: flex;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		justify-content: space-between;
+}
+
+
+@media screen and (max-width: 980px) {
+
+			#navHomePage {
+				display:none;
+			}
+
+		}
+
+
+
+#navHomePage a {
+			color: #ffffff;
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+			text-decoration: none;
+
+		}
+
+#navHomePage ul.menu {
+		text-transform: uppercase;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 900;
+    	letter-spacing: 0.075em;
+    	margin: 0;
+    	padding-left: 0;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+    	
+}
+
+#navHomePage ul.menu .active {
+	background-color: #ffffff;
+}
+
+#navHomePage ul.menu li {
+	display: block;
+	padding-left: 0;
+}
+#navHomePage ul.menu li a {
+					display: block;
+					font-size: 0.8rem;
+					outline: none;
+					padding: 0 2rem;
+					word-wrap: break-word;
+					text-decoration: none;
+	
+} 
+
+#navHomePage ul.menu li.active a {
+	color: #1e252d;
+	text-decoration: none;
+
+}
+
+#navHomePage ul.menu li.active a:hover {
+	color: #18bfef;
+}
+
+#navHomePage ul.menu li a:hover {
+	color: inherit ;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+#navHomePage ul.icons {
+	cursor: default;
+	list-style: none;
+	padding: 0 0.5rem 0 0;
+	margin:0;
+	display: inline-block;
+
+}
+
+#navHomePage ul.icons li {
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#navHomePage ul.icons li:last-child {
+		padding-right: 0;
+}
+
+#navHomePage ul.icons li a.icon {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#navHomePage ul.icons li .icon:before {
+				width: 2.25rem;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				display: inline-block;
+				text-align: center;
+				border-radius: 100%;
+				font-size: 1.25rem;
+				-moz-osx-font-smoothing: grayscale;
+   	 			-webkit-font-smoothing: antialiased;
+    			font-style: normal;
+    			font-variant: normal;
+    			text-rendering: auto;
+    			text-transform: none;
+   				font-family: 'Font Awesome 5 Free';
+    			font-weight: 400;				
+}
+
+#navHomePage ul.icons li .icon.brands:before {
+				font-family: 'Font Awesome 5 Brands';
+}
+
+#navHomePage ul.icons li .icon.brands:hover:before {
+				color: #18bfef;
+}
+
+#navHomePage ul.icons.alt li a.icon:hover:before {
+			box-shadow: inset 0 0 0 2px #18bfef;
+}
+
+#navHomePage ul.icons li .icon span {
+				display: none;
+}
