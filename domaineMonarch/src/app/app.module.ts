@@ -18,11 +18,13 @@ import {PhotosService}from './services/photos.service';
 import{Routes, RouterModule} from '@angular/router';
 import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
+import { AuthComponent } from './auth/auth/auth.component';
 
 
 
 
 const appRoutes: Routes = [
+  { path: 'auth', component: AuthComponent },
   { path: 'auth/signup', component: SignUpComponent },
   { path: 'auth/signin', component: SignInComponent },
   { path: 'photos', component: ListPhotoComponent },
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     ListPhotoComponent,
     PhotoViewComponent,
     PhotoSingleComponent,
-    AddphotoFormComponent
+    AddphotoFormComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
