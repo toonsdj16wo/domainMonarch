@@ -33,7 +33,7 @@ export class PhotosService {
 		})
 	}
 
-	//Récupère une photo selon son id ,on utilise once qui ne fait une seule requête de donnée
+	//Récupère une photo selon son id ,on utilise once qui ne fait une seule requête de donnée. On veut la donnee une seule fois, on n'a pas besoin de faire des callback à chaque modfication
 	getSinglePhoto(id: number) {
 	    return new Promise(
 	      (resolve, reject) => {
