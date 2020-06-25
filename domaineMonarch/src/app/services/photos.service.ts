@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import{Subject}from"rxjs";
-import { photo } from '../models/photo.models';
+import { PhotoModule } from '../models/photo/photo.module';
 
 
 @Injectable({
@@ -8,8 +8,8 @@ import { photo } from '../models/photo.models';
 })
 export class PhotosService {
 
-	photos : photo[] =[];
-	photoSubject = new Subject<photo[]>();
+	photos : PhotoModule[] =[];
+	photoSubject = new Subject<PhotoModule[]>();
 
 	emitPhotos(){
 		//emission des nouvelles photos
@@ -18,7 +18,7 @@ export class PhotosService {
 
 	//Sauvegarde les photos en base de données
 	savePhotos(){
-		firebase.database().ref("/photos").set(this.books);
+		firebase.database().ref("/photos").set(this.photos);
 	}
 
 	/*On demande à firebase de récupérer la liste des photos , 'value' demande d'executer la callback 
@@ -27,7 +27,7 @@ export class PhotosService {
 	Prise en compte si le serveur ne nous retourne rien*/
 
 	getPhotos(){
-		firebase.database().ref("/photos").on('value',(data: Datasnapshot) =>{
+		firebase.database().ref("/photos").on('value',(data) =>{
 			this.photos = data.val() ? data.val() : [];
 			this.emitPhotos();
 		})
@@ -38,7 +38,7 @@ export class PhotosService {
 	    return new Promise(
 	      (resolve, reject) => {
 	        firebase.database().ref('photo/view/' + id).once('value').then(
-	          (data: DataSnapshot) => {
+	          (data) => {
 	            resolve(data.val());
 	          }, (error) => {
 	            reject(error);
@@ -48,13 +48,15 @@ export class PhotosService {
 	    );
 	}
 
-	createPhoto (newPhoto : photo) {
+//ajoute la photo
+	createPhoto (newPhoto : PhotoModule) {
 		this.photos.push(newPhoto);
 		this.savePhotos();
 		this.emitPhotos();
 	}
 
-	removePhotos(photo: photo){
+// retirer un post
+	removePhotos(photo: PhotoModule){
 		const photoIndex = this.photos.findIndex(
 			(photoElement) =>{
 				if(photoElement == photo){
