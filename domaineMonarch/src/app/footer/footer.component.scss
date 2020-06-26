@@ -134,6 +134,12 @@
 
 }
 
+#footerHomePage section form .fields .field input [type="text"]:focus,
+#footerHomePage section form .fields .field input [type="email"]:focus,
+#footerHomePage section form .fields .field textarea:focus {
+				border-color: #18bfef;
+			}
+
 
 #footerHomePage section form .fields .field input[type="text"] {
 		border-color: #e2e2e2;
@@ -444,4 +450,9 @@
 	border-bottom: dotted 1px;
 	text-decoration: none;
 
+}
+
+#copyright .linkcopy li a:hover {
+	border-bottom-color: transparent;
+	color: #18bfef ;
 }
