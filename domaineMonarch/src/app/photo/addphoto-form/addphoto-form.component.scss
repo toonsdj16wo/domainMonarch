@@ -1,0 +1,543 @@
+.addPhoto{
+		box-sizing: inherit;
+		padding: 8rem 8rem 6rem 8rem ;
+		border-top: 0;
+		display: block;
+
+}
+
+			@media screen and (max-width: 1280px) {
+
+				.addPhoto {
+					padding: 6rem 4rem 4rem 4rem ;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.addPhoto {
+					padding: 2rem 2rem 2rem 2rem ;
+				}
+
+			}
+.titleform {
+	color: #212931;
+	font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 736px){
+	 .addPhoto h2.titleform{
+	    line-height: 1.2;
+	}
+}
+
+.formaddPhoto{
+		margin: 0 0 2rem 0;
+		box-sizing: inherit;
+}
+
+.formaddPhoto > :last-child {
+	margin-bottom: 0;
+
+}
+
+.formaddPhoto label {
+		display: block;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: 900;
+		line-height: 1.5;
+		letter-spacing: 0.075em;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		margin: 0 0 0.75rem 0;
+		color: #212931;
+
+}
+
+@media screen and (max-width: 980px) {
+
+			.formaddPhoto label {
+				font-size: 0.9rem;
+			}
+
+		}
+
+.formaddPhoto input[type="text"],
+	.formaddPhoto select,
+	.formaddPhoto textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: transparent;
+		border-radius: 0;
+		border: solid 2px;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1rem;
+		text-decoration: none;
+		width: 100%;
+		border-color: #eeeeee;
+
+	}
+
+	.formaddPhoto input[type="text"]:focus,
+	.formaddPhoto 	select:focus,
+	.formaddPhoto 	textarea:focus {
+			border-color: #18bfef;
+		}
+
+	.formaddPhoto input[type="text"]:invalid,
+		select:invalid,
+		textarea:invalid {
+			box-shadow: none;
+		}
+
+	.formaddPhoto select {
+		background-size: 1.25rem;
+		background-repeat: no-repeat;
+		background-position: calc(100% - 1rem) center;
+		height: 3rem;
+		padding-right: 3rem;
+		text-overflow: ellipsis;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23eeeeee' /%3E%3C/svg%3E");
+
+	}
+
+		.formaddPhoto select:focus::-ms-value {
+			background-color: transparent;
+		}
+
+		.formaddPhoto select::-ms-expand {
+			display: none;
+		}
+
+		.formaddPhoto select option {
+			background-color: #ffffff;
+			color: #212931;
+		}
+
+	.formaddPhoto input[type="text"],
+	.formaddPhoto select {
+		height: 3rem;
+	}
+
+	.formaddPhoto 	textarea {
+		padding: 0.75rem 1rem;
+	}	
+/* Row */
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+		.row > * {
+			box-sizing: border-box;
+		}
+
+		.row.gtr-uniform > * > :last-child {
+			margin-bottom: 0;
+		}
+
+		.row > .col-4 {
+			width: 33.33333%;
+		}
+
+		.row > .col-6 {
+			width: 50%;
+		}
+
+		.row > .col-8 {
+			width: 66.66667%;
+		}
+
+		.row > .col-12 {
+			width: 100%;
+		}
+
+		.row {
+			margin-top: 0;
+			margin-left: -1.5rem;
+		}
+
+			.row > * {
+				padding: 0 0 0 1.5rem;
+			}
+
+			.row.gtr-uniform {
+				margin-top: -1.5rem;
+			}
+
+				.row.gtr-uniform > * {
+					padding-top: 1.5rem;
+				}
+
+		@media screen and (max-width: 1680px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row > .col-4-xlarge {
+					width: 33.33333%;
+				}
+
+				
+				.row > .col-6-xlarge {
+					width: 50%;
+				}
+
+				.row > .col-12-xlarge {
+					width: 100%;
+				}
+
+				
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				
+				.row > .col-4-large {
+					width: 33.33333%;
+				}
+
+
+				.row > .col-6-large {
+					width: 50%;
+				}
+
+				.row > .col-12-large {
+					width: 100%;
+				}
+
+				
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row > .col-4-medium {
+					width: 33.33333%;
+				}
+
+				
+				.row > .col-6-medium {
+					width: 50%;
+				}
+
+				.row > .col-12-medium {
+					width: 100%;
+				}
+
+				
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+
+			
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				
+				.row > .col-4-small {
+					width: 33.33333%;
+				}
+				
+				.row > .col-6-small {
+					width: 50%;
+				}
+
+				.row > .col-12-small {
+					width: 100%;
+				}
+
+				
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				
+				.row > .col-4-xsmall {
+					width: 33.33333%;
+				}
+
+				.row > .col-6-xsmall {
+					width: 50%;
+				}
+
+				.row > .col-12-xsmall {
+					width: 100%;
+				}
+
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+		}
+
+		@media screen and (max-width: 360px) {
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+
+				.row > .col-4-xxsmall {
+					width: 33.33333%;
+				}
+
+				.row > .col-6-xxsmall {
+					width: 50%;
+				}
+
+				.row > .col-12-xxsmall {
+					width: 100%;
+				}
+				
+				.row {
+					margin-top: 0;
+					margin-left: -1.5rem;
+				}
+
+					.row > * {
+						padding: 0 0 0 1.5rem;
+					}
+
+					.row.gtr-uniform {
+						margin-top: -1.5rem;
+					}
+
+						.row.gtr-uniform > * {
+							padding-top: 1.5rem;
+						}
+		}
+
+.formaddPhoto ul.actions {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 2rem -1rem;
+
+}
+
+.formaddPhoto ul.actions li.submitAddPhoto {
+    padding: 0 0 0 1rem;
+    vertical-align: middle;
+}
+
+.formaddPhoto input[type="submit"]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.formaddPhoto input[type="submit"].submitAddPhoto {
+    background-color: #212931;
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+.formaddPhoto input[type="submit"].submitAddPhoto:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+@media screen and (max-width: 980px) {
+	.formaddPhoto input[type="submit"]{
+	    font-size: 0.9rem;
+	    height: 3.25rem;
+	    line-height: 3.25rem;
+	}
+}
+
