@@ -134,17 +134,21 @@
 
 }
 
-#footerHomePage section form .fields .field input [type="text"]:focus,
-#footerHomePage section form .fields .field input [type="email"]:focus,
+#footerHomePage section form .fields .field input[type="text"]:focus,
+#footerHomePage section form .fields .field input[type="email"]:focus,
 #footerHomePage section form .fields .field textarea:focus {
 				border-color: #18bfef;
 			}
 
+#footerHomePage section form .fields .field input[type="text"],
+#footerHomePage section form .fields .field input[type="mail"],
+#footerHomePage section form .fields .field textarea, {
+			border-color: #e2e2e2 ;
+}
 
 #footerHomePage section form .fields .field input[type="text"] {
-		border-color: #e2e2e2;
 		border-radius: 0;
-    	border: groove 2px;
+    	border: solid 2px;
     	color: inherit;
     	display: block;
     	padding: 0 1rem;
@@ -155,10 +159,9 @@
 
 #footerHomePage section form .fields .field textarea {
     color: #717981;
-	border-color: #e2e2e2;
     background: transparent;
     border-radius: 0;
-    border: groove 2px;
+    border: solid 2px;
     color: inherit;
     display: block;
     outline: 0;
