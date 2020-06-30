@@ -112,7 +112,7 @@ a.imagePhoto {
 .specialPhoto  li .buttonPhoto {
 	background-color: transparent;
     box-shadow: inset 0 0 0 2px #212931;
-    color: #212931 !important;
+    color: #212931 ;
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -139,6 +139,12 @@ a.imagePhoto {
     box-sizing: inherit;
 }
 
+.specialPhoto  li .buttonPhoto:hover {
+		box-shadow: inset 0 0 0 2px #18bfef;
+    	color: #18bfef ;
+    	border-bottom-color: transparent;
+
+	}
 
 @media screen and (max-width: 980px) {
 .specialPhoto  li .buttonPhoto {

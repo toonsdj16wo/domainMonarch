@@ -22,7 +22,6 @@ section.listphotos .photo {
 	display: block;
 	border-color: #eeeeee;
     border-left-width: 2px;
-    border-style: solid;
     border-top-width: 2px;
     text-align: center;
     padding: 4rem;
@@ -56,3 +55,128 @@ section.listphotos .photo:nth-child(-n + 2){
 section.listphotos .photo:nth-child(2n - 1){
     border-left-width: 0;
 }
+
+.footerListPhoto {
+		padding: 4rem 4rem 2rem 4rem;
+	    border-top: solid 2px #eeeeee;
+	    margin: 0;
+		text-align: center;
+		display: block;
+		border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+	    flex: auto;
+	}
+
+.footerListPhoto .pagination {
+	display: -moz-inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    list-style: none;
+    margin: 0 0 2rem 2px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: inherit;
+}
+
+
+.footerListPhoto .pagination a.active {
+	background-color: #eeeeee;
+}	
+
+
+
+.footerListPhoto  .pagination a {
+	color: #212931;
+}
+
+.footerListPhoto  .pagination  a , .footerListPhoto .pagination  span {	
+	-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: solid 2px;
+   	border-color: #eeeeee;
+    display: inline-block;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    height: 3rem;
+    letter-spacing: 0.075em;
+    line-height: calc(3rem - 4px);
+    margin-left: -2px;
+    min-width: 3rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.footerListPhoto .pagination a:hover {
+    color: #18bfef !important;
+    border-color: #18bfef;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 980px){
+		.footerListPhoto  .pagination a {
+    		font-size: 0.9rem;
+		}
+}
+
+
+.footerListPhoto .pagination  span {
+	    color: #eeeeee;
+	    border-color: #eeeeee;
+}
+
+
+@media screen and (max-width: 980px) {
+	 .footerListPhoto .pagination  span {
+    		font-size: 0.9rem;
+		}
+}
+ 
+
+.footerListPhoto .pagination .next, .footerListPhoto  .pagination .previous {
+    text-decoration: none;
+    padding: 0 1.75rem;
+}
+
+.footerListPhoto .pagination .next:before {
+    content: '\f105';
+    float: right;
+    margin-left: 0.9375em;
+}
+
+.footerListPhoto .pagination .next:before, .footerListPhoto  .pagination .previous:before {
+    display: inline-block;
+    color: inherit !important;
+}
+
+.footerListPhoto .pagination .next:before, .footerListPhoto .pagination .previous:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+
