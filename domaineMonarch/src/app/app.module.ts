@@ -30,7 +30,9 @@ const appRoutes: Routes = [
   { path: 'photos', component: ListPhotoComponent },
   { path: 'photo/new', component: AddphotoFormComponent },
   { path: 'photo/view/:id', component: PhotoSingleComponent },
-  { path: '', component: WelcomeComponent }
+  { path: '', component: WelcomeComponent },
+  { path: 'not-found', component: WelcomeComponent},
+  { path: '**', redirectTo: 'not-found' }
 
 ];
 
