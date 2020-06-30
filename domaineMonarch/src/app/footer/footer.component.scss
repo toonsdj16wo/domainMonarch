@@ -134,17 +134,17 @@
 
 }
 
-#footerHomePage section form .fields .field input[type="text"]:focus,
-#footerHomePage section form .fields .field input[type="email"]:focus,
-#footerHomePage section form .fields .field textarea:focus {
-				border-color: #18bfef;
-			}
-
 #footerHomePage section form .fields .field input[type="text"],
 #footerHomePage section form .fields .field input[type="mail"],
 #footerHomePage section form .fields .field textarea, {
-			border-color: #e2e2e2 ;
+			border-color: #e2e2e2 !important;
 }
+
+#footerHomePage section form .fields .field input:focus,
+#footerHomePage section form .fields .field input:focus,
+#footerHomePage section form .fields .field textarea:focus {
+				border-color: #18bfef !important;
+			}
 
 #footerHomePage section form .fields .field input[type="text"] {
 		border-radius: 0;
@@ -154,6 +154,7 @@
     	padding: 0 1rem;
     	text-decoration: none;
     	width: 80%;
+    	outline: 0;
     	background: transparent;
 }
 
